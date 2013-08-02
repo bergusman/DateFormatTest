@@ -37,12 +37,22 @@
                     if (components.minute == 0) {
                         return @"Только что";
                     } else {
-                        NSString *format = [self pluralStringWithCount:components.minute forms:@[@"Минуту назад", @"%d минуты назад", @"%d минут назад"]];
-                        return [NSString stringWithFormat:format, components.minute];
+                        if (components.minute == 1) {
+                            return @"Минуту назад";
+                        } else {
+                            NSString *format = [self pluralStringWithCount:components.minute forms:@[@"%d минуту назад", @"%d минуты назад", @"%d минут назад"]];
+                            return [NSString stringWithFormat:format, components.minute];
+                        }
+                        
                     }
                 } else {
-                    NSString *format = [self pluralStringWithCount:components.hour forms:@[@"Час назад", @"%d часа назад", @"%d часов назад"]];
-                    return [NSString stringWithFormat:format, components.hour];
+                    if (components.hour == 1) {
+                        return @"Час назад";
+                    } else {
+                        NSString *format = [self pluralStringWithCount:components.hour forms:@[@"%d час назад", @"%d часа назад", @"%d часов назад"]];
+                        return [NSString stringWithFormat:format, components.hour];
+                    }
+                    
                 }
             } else if (dateComponents.day + 1 == nowComponents.day) {
                 return @"Вчера";
