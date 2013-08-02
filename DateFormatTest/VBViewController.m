@@ -8,22 +8,31 @@
 
 #import "VBViewController.h"
 
+#import "VBDateFormatter.h"
+
 @interface VBViewController ()
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
+@property (strong, nonatomic) VBDateFormatter *dateFormatter;
 
 @end
 
 @implementation VBViewController
 
-- (void)viewDidLoad
-{
+#pragma mark - UIViewController
+
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.dateFormatter = [[VBDateFormatter alloc] init];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Actions
+
+- (IBAction)datePickerChanged:(UIDatePicker *)sender {
+    self.dateLabel.text = [self.dateFormatter stringFromDate:sender.date];
 }
 
 @end

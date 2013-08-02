@@ -18,6 +18,7 @@
 		44B81E6A17ABC454007A7BB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B81E6917ABC454007A7BB0 /* Default-568h@2x.png */; };
 		44B81E6D17ABC454007A7BB0 /* VBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B81E6C17ABC454007A7BB0 /* VBViewController.m */; };
 		44B81E7017ABC454007A7BB0 /* VBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B81E6E17ABC454007A7BB0 /* VBViewController.xib */; };
+		44B81E7817ABC5BF007A7BB0 /* VBDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B81E7717ABC5BF007A7BB0 /* VBDateFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		44B81E6B17ABC454007A7BB0 /* VBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBViewController.h; sourceTree = "<group>"; };
 		44B81E6C17ABC454007A7BB0 /* VBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBViewController.m; sourceTree = "<group>"; };
 		44B81E6F17ABC454007A7BB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VBViewController.xib; sourceTree = "<group>"; };
+		44B81E7617ABC5BF007A7BB0 /* VBDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDateFormatter.h; sourceTree = "<group>"; };
+		44B81E7717ABC5BF007A7BB0 /* VBDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBDateFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 		44B81E5917ABC454007A7BB0 /* DateFormatTest */ = {
 			isa = PBXGroup;
 			children = (
+				44B81E7617ABC5BF007A7BB0 /* VBDateFormatter.h */,
+				44B81E7717ABC5BF007A7BB0 /* VBDateFormatter.m */,
 				44B81E6217ABC454007A7BB0 /* VBAppDelegate.h */,
 				44B81E6317ABC454007A7BB0 /* VBAppDelegate.m */,
 				44B81E6B17ABC454007A7BB0 /* VBViewController.h */,
@@ -177,6 +182,7 @@
 				44B81E6017ABC454007A7BB0 /* main.m in Sources */,
 				44B81E6417ABC454007A7BB0 /* VBAppDelegate.m in Sources */,
 				44B81E6D17ABC454007A7BB0 /* VBViewController.m in Sources */,
+				44B81E7817ABC5BF007A7BB0 /* VBDateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
